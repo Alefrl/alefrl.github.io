@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova</title>
+</head>
+<body>
+    <ul type="circle">
+    <li>viva mina 1</li>
+    <li>viva mina 2</li>
+    <li>viva mina 3</li>
+</ul>
+<ol type="I">
+    <li>viva valentina</li>
+    <ul type="circle">
+        <li>viva valentina</li>
+        <li>viva valentina</li>
+    </ul>
+    <li>evviva</li>
+    <li>evviva</li>
+</ol>
+</body>
+</html>
