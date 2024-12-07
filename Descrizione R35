@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissan R35</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #d71a1a;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 50%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nissan R35</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Nissan_GT-R_R35_2008.jpg" alt="Nissan R35">
+
+    <h2>Prezzi per Modello e Tipologia di Alimentazione</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Modello</th>
+                <th>Tipologia di Alimentazione</th>
+                <th>Prezzo (€)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nissan R35 Base</td>
+                <td>Benzina</td>
+                <td>100.000</td>
+            </tr>
+            <tr>
+                <td>Nissan R35 Premium</td>
+                <td>Benzina</td>
+                <td>120.000</td>
+            </tr>
+            <tr>
+                <td>Nissan R35 Nismo</td>
+                <td>Benzina</td>
+                <td>150.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Optional</h2>
+    <ul>
+        <li>Impianto audio Bose</li>
+        <li>Sedili in pelle riscaldati</li>
+        <li>Sistema di navigazione avanzato</li>
+        <li>Cruise control adattivo</li>
+        <li>Freni Brembo ad alte prestazioni</li>
+    </ul>
+
+    <h2>Punti di Forza</h2>
+    <p>
+        La Nissan R35 si distingue per le sue prestazioni straordinarie, grazie al potente motore V6 biturbo da 3,8 litri, 
+        la trazione integrale precisa e un design accattivante. La sua capacità di combinare velocità, controllo e comfort 
+        la rende una delle supercar più desiderate.
+    </p>
+
+    <p>
+        Scopri di più sul sito ufficiale del marchio: 
+        <a href="https://www.nissan.it/" target="_blank">Nissan Italia</a>.
+    </p>
+
+    <h2>Richiesta Informazioni</h2>
+    <form action="/submit" method="post">
+        <div>
+            <label for="dealer-name">Nome della concessionaria visitata:</label><br>
+            <input type="text" id="dealer-name" name="dealer-name" required>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="data-consent" required>
+                Acconsento al trattamento dei dati
+            </label>
+        </div>
+        <div>
+            <label for="model-choice">Modello di interesse:</label><br>
+            <select id="model-choice" name="model-choice" required>
+                <option value="base">Nissan R35 Base</option>
+                <option value="premium">Nissan R35 Premium</option>
+                <option value="nismo">Nissan R35 Nismo</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Invia</button>
+        </div>
+    </form>
+</body>
+</html>
