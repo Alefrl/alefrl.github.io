@@ -3,92 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ricetta della Carbonara</title>
+    <title>Ricetta di Cucina - Torta al Cioccolato</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
             margin: 0;
             padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
         }
         header {
-            background-color: #1d3557;
-            color: white;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
+            background-color: #5c4033;
+            color: white;
         }
         header h1 {
             margin: 0;
         }
         .container {
-            max-width: 900px;
+            width: 80%;
             margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #1d3557;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        .ingredients, .steps {
+        .recipe-table, .ingredients-list, .instructions {
+            width: 100%;
             margin-bottom: 20px;
         }
-        footer {
-            background-color: #1d3557;
-            color: white;
-            text-align: center;
+        .recipe-table td, .recipe-table th {
             padding: 10px;
-            position: fixed;
+            text-align: left;
+        }
+        .ingredients-list li {
+            margin: 5px 0;
+        }
+        .form-container {
+            background-color: #e7e7e7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .form-container input, .form-container select, .form-container textarea {
             width: 100%;
-            bottom: 0;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-container input[type="submit"] {
+            background-color: #5c4033;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #4a3024;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Ricetta della Pasta alla Carbonara</h1>
-    </header>
+<header>
+    <h1>Torta al Cioccolato</h1>
+</header>
 
-    <div class="container">
-        <section class="ingredients">
-            <h2>Ingredienti</h2>
-            <ul>
-                <li>400g di spaghetti</li>
-                <li>150g di guanciale</li>
-                <li>4 uova (solo tuorli)</li>
-                <li>100g di pecorino romano grattugiato</li>
-                <li>Sale e pepe nero q.b.</li>
-            </ul>
-        </section>
+<div class="container">
 
-        <section class="steps">
-            <h2>Procedimento</h2>
-            <ol>
-                <li>Porta a bollore una pentola con abbondante acqua salata e cuoci gli spaghetti al dente, seguendo le istruzioni sulla confezione.</li>
-                <li>Nel frattempo, taglia il guanciale a cubetti e rosolalo in una padella capiente a fuoco medio, finché diventa croccante e il grasso si scioglie.</li>
-                <li>In una ciotola, sbatti i tuorli con il pecorino grattugiato, aggiustando di pepe nero (non mettere sale, poiché il pecorino è già saporito).</li>
-                <li>Quando gli spaghetti sono pronti, scolali e conserva un po’ di acqua di cottura.</li>
-                <li>Aggiungi gli spaghetti nella padella con il guanciale, mescolando per amalgamare bene il tutto.</li>
-                <li>Togli la padella dal fuoco e aggiungi subito il composto di uova e pecorino, mescolando rapidamente per creare una crema. Se necessario, aggiungi un po’ di acqua di cottura per ottenere la consistenza desiderata.</li>
-                <li>Servi subito, guarnendo con altro pepe nero appena macinato e, se vuoi, un po’ di pecorino grattugiato.</li>
-            </ol>
-        </section>
+    <!-- Immagine della ricetta -->
+    <img src="https://www.example.com/torta-al-cioccolato.jpg" alt="Torta al Cioccolato" style="width: 100%; max-width: 600px;">
+
+    <!-- Tabella con difficoltà, costo e tempo -->
+    <table class="recipe-table" border="1">
+        <tr>
+            <th>Difficoltà</th>
+            <th>Costo</th>
+            <th>Tempo di realizzazione</th>
+        </tr>
+        <tr>
+            <td>Media</td>
+            <td>Economico</td>
+            <td>60 minuti</td>
+        </tr>
+    </table>
+
+    <!-- Lista non ordinata degli ingredienti -->
+    <h3>Ingredienti</h3>
+    <ul class="ingredients-list">
+        <li>200 g di farina</li>
+        <li>200 g di zucchero</li>
+        <li>100 g di cioccolato fondente</li>
+        <li>2 uova</li>
+        <li>150 ml di latte</li>
+        <li>1 bustina di lievito per dolci</li>
+        <li>50 g di burro</li>
+        <li>Un pizzico di sale</li>
+    </ul>
+    <h3>Istruzioni</h3>
+    <p>Per preparare la torta al cioccolato, sciogli il cioccolato fondente a bagnomaria insieme al burro. In una ciotola capiente, sbatti le uova con lo zucchero fino a ottenere un composto soffice. Aggiungi il cioccolato fuso, il latte, e mescola bene. Setaccia la farina, il lievito e il sale, quindi uniscili al composto liquido. Versa l'impasto in una teglia imburrata e infarinata e cuoci in forno preriscaldato a 180°C per circa 30-40 minuti. Lascia raffreddare prima di servire.</p>
+    <p>Per la ricetta completa, visita il sito <a href="https://www.example.com/ricetta-originale" target="_blank">questa pagina</a>.</p>
+    <div class="form-container">
+        <h3>Lascia il tuo feedback</h3>
+        <form action="submit_feedback.php" method="POST">
+            <label for="email">Indirizzo email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="consenso">Acconsento al trattamento dei dati personali:</label>
+            <input type="checkbox" id="consenso" name="consenso" required> Accetto
+
+            <label for="gradimento">Livello di gradimento:</label>
+            <select id="gradimento" name="gradimento" multiple>
+                <option value="ottimo">Ottimo</option>
+                <option value="buono">Buono</option>
+                <option value="sufficiente">Sufficiente</option>
+                <option value="scarso">Scarso</option>
+            </select>
+
+            <input type="submit" value="Invia">
+        </form>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Ricette Italiane</p>
-    </footer>
+</div>
 
 </body>
 </html>
