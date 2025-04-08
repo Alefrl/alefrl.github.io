@@ -4,7 +4,17 @@
 <style>
 body {margin:0;}
 
-ul {
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+}
+  ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -34,9 +44,15 @@ li a:hover {
 </style>
 </head>
 <body>
-
-<ul>
-  <li><a href="index.html">Home</a></li>
+ <ul>
+    <button class="dropbtn">Home
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
 </ul>
 
 <div style="padding:20px;margin-top:30px;background-color:white;height:1500px;">
