@@ -3,7 +3,7 @@
 <head>
 <style>
 body {margin:0;}
-  .dropdown-content {
+  .home-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -11,15 +11,15 @@ body {margin:0;}
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   }
-  .dropdown:hover .dropdown-content {
+  .home:hover .home-content {
   display: block;
 }
 
-  .dropdown {
+  .home {
   float: left;
   overflow: hidden;
   }
-  .dropdown-content a {
+  .home-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -40,7 +40,7 @@ body {margin:0;}
   text-decoration: none;
   }
 
-.dropdown .dropbtn {
+.home .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -81,6 +81,7 @@ li a:hover {
 </head>
 <body>
  <ul>
+   <div class="home">
     <button class="dropbtn">Home
       <i class="fa fa-caret-down"></i>
     </button>
@@ -89,6 +90,7 @@ li a:hover {
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
     </div>
+   </div>
 </ul>
 
 <div style="padding:20px;margin-top:30px;background-color:white;height:1500px;">
