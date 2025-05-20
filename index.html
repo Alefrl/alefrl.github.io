@@ -17,13 +17,24 @@ body {margin:0;}
   padding: 14px 16px;
   text-decoration: none;
 }
+  .nome {
+   float: right;
+  overflow: hidden;
+}
+.nome-content{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;}
 
 .home {
   float: left;
   overflow: hidden;
 }
 
-.home .dropbtn {
+.home .dropbtn .nome {
   font-size: 16px;  
   border: none;
   outline: none;
@@ -34,11 +45,11 @@ body {margin:0;}
   margin: 0;
 }
 
-.navbar a:hover, .home:hover .dropbtn {
+.navbar a:hover, .home:hover .dropbtn .nome:hover {
   background-color: red;
 }
 
-.home-content {
+.home-content .nome-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -47,7 +58,7 @@ body {margin:0;}
   z-index: 1;
 }
 
-.home-content a {
+.home-content a .nome {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -60,20 +71,17 @@ body {margin:0;}
   background-color: #ddd;
 }
 
-.home:hover .home-content {
+.home:hover .home-content .nome .nome-content {
   display: block;
 }
-}
+
+
 </style>
 </head>
 <body>
  
    <div class="navbar">
    
-
-     <div class="home">Alessio Capuni
-      <button class="dropbtn">lavori </button>
-    </div>
   <div class="home">
     <button class="dropbtn">lavori
       <i class="fa fa-caret-down"></i>
@@ -97,6 +105,9 @@ body {margin:0;}
 <a href="modal.html">modali</a>
     </div>
    </div>
+      <div class="nome">
+      <button class="dropbtn">Alessio Capuni </button>
+    </div>
    </div>
 
 <div style="padding:20px;margin-top:30px;background-color:white;height:1500px;">
