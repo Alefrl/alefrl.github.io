@@ -3,197 +3,207 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ricetta di Cucina - Torta al Cioccolato</title>
+    <title>Nissan R35</title>
     <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg" />
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 700px;
+            max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
-            background-color: #fff8f0;
-            color: #3b2f2f;
+            background-color: #f9faff;
+            color: #333;
             line-height: 1.6;
         }
-        header h1 {
+        h1, h2 {
             text-align: center;
-            color: #6b3e26;
-            text-shadow: 1px 1px 3px rgba(107, 62, 38, 0.3);
-        }
-        .container {
-            text-align: center;
+            color: #054a91;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
         }
         img {
+            display: block;
+            margin: 20px auto;
             max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(107, 62, 38, 0.25);
-            margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            border-radius: 8px;
         }
-        table.recipe-table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 30px;
-            box-shadow: 0 0 10px rgba(107, 62, 38, 0.15);
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
-        table.recipe-table th,
-        table.recipe-table td {
-            padding: 12px;
-            border: 1px solid #d1b899;
-            background-color: #f9f2e7;
-            color: #6b3e26;
-        }
-        h3 {
-            color: #6b3e26;
-            margin-bottom: 15px;
+        thead {
+            background-color: #054a91;
+            color: white;
+            font-weight: bold;
             text-align: left;
         }
-        ul.ingredients-list {
-            list-style-type: disc;
-            max-width: 400px;
-            margin: 0 auto 30px auto;
-            text-align: left;
-            color: #543b1f;
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f1f6fc;
+        }
+        ul {
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            padding-left: 20px;
+            color: #054a91;
+        }
+        ul li {
+            margin-bottom: 8px;
+            font-weight: 600;
         }
         p {
-            max-width: 600px;
-            margin: 0 auto 20px auto;
+            max-width: 700px;
+            margin: 20px auto;
             font-size: 1.1rem;
-            text-align: justify;
         }
         a {
-            color: #b25512;
+            color: #054a91;
             text-decoration: none;
             font-weight: 600;
         }
         a:hover {
             text-decoration: underline;
         }
-        .form-container {
-            background-color: #f9f2e7;
-            padding: 20px 30px;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(107, 62, 38, 0.15);
+        form {
+            background-color: #fff;
             max-width: 400px;
-            margin: 0 auto 50px auto;
+            margin: 40px auto;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            font-size: 1rem;
+        }
+        form div {
+            margin-bottom: 20px;
             text-align: left;
         }
-        form label {
+        label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             font-weight: 600;
-            color: #6b3e26;
+            color: #054a91;
         }
-        form input[type="email"],
-        form input[type="password"],
-        form select {
+        input[type="text"],
+        select {
             width: 100%;
-            padding: 8px 12px;
-            margin-bottom: 20px;
-            border: 1.8px solid #d1b899;
+            padding: 10px 12px;
+            border: 1.8px solid #ccc;
             border-radius: 6px;
             font-size: 1rem;
             transition: border-color 0.3s ease;
         }
-        form input[type="email"]:focus,
-        form input[type="password"]:focus,
-        form select:focus {
-            border-color: #b25512;
+        input[type="text"]:focus,
+        select:focus {
+            border-color: #054a91;
             outline: none;
-            box-shadow: 0 0 8px rgba(178, 85, 18, 0.4);
+            box-shadow: 0 0 8px rgba(5, 74, 145, 0.4);
         }
-        form input[type="checkbox"] {
+        input[type="checkbox"] {
             transform: scale(1.2);
-            margin-right: 8px;
+            margin-right: 10px;
             vertical-align: middle;
-            cursor: pointer;
         }
-        form input[type="submit"] {
-            background-color: #b25512;
+        button {
+            width: 100%;
+            background-color: #054a91;
             color: white;
             border: none;
             padding: 12px 0;
             font-size: 1.1rem;
             font-weight: 700;
             border-radius: 8px;
-            width: 100%;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        form input[type="submit"]:hover {
-            background-color: #7c3708;
+        button:hover {
+            background-color: #043b74;
         }
     </style>
 </head>
 <body>
+    <h1>Nissan R35</h1>
+    <img src="/Nissan_GT-R_01.JPG" alt="Nissan R35">
 
-<header>
-    <h1>Torta al Cioccolato</h1>
-</header>
-
-<div class="container">
-    <img src="/tortacioccolato.jpg" alt="Torta al Cioccolato" />
-    
-    <table class="recipe-table" border="1">
-        <tr>
-            <th>Difficoltà</th>
-            <th>Costo</th>
-            <th>Tempo di realizzazione</th>
-        </tr>
-        <tr>
-            <td>Media</td>
-            <td>Economico</td>
-            <td>60 minuti</td>
-        </tr>
+    <h2>Prezzi e Tipologia di Alimentazione</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Modello</th>
+                <th>Prezzo (€)</th>
+                <th>Tipologia di Alimentazione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nissan R35 Base</td>
+                <td>100.000</td>
+                <td>Benzina</td>
+            </tr>
+            <tr>
+                <td>Nissan R35 Premium</td>
+                <td>120.000</td>
+                <td>Benzina</td>
+            </tr>
+            <tr>
+                <td>Nissan R35 Nismo</td>
+                <td>150.000</td>
+                <td>Benzina</td>
+            </tr>
+        </tbody>
     </table>
-    
-    <h3>Ingredienti</h3>
-    <ul class="ingredients-list">
-        <li>200 g di farina</li>
-        <li>200 g di zucchero</li>
-        <li>100 g di cioccolato fondente</li>
-        <li>2 uova</li>
-        <li>150 ml di latte</li>
-        <li>1 bustina di lievito per dolci</li>
-        <li>50 g di burro</li>
-        <li>Un pizzico di sale</li>
+
+    <h2>Optional</h2>
+    <ul>
+        <li>Impianto audio Bose</li>
+        <li>Sedili in pelle riscaldati</li>
+        <li>Sistema di navigazione avanzato</li>
+        <li>Cruise control adattivo</li>
+        <li>Freni Brembo ad alte prestazioni</li>
     </ul>
-    
-    <h3>Istruzioni</h3>
+
+    <h2>Punti di Forza</h2>
     <p>
-        Per preparare la torta al cioccolato, sciogli il cioccolato fondente a bagnomaria insieme al burro. In una ciotola capiente, sbatti le uova con lo zucchero fino a ottenere un composto soffice. Aggiungi il cioccolato fuso, il latte, e mescola bene. Setaccia la farina, il lievito e il sale, quindi uniscili al composto liquido. Versa l'impasto in una teglia imburrata e infarinata e cuoci in forno preriscaldato a 180°C per circa 30-40 minuti. Lascia raffreddare prima di servire.
+        La Nissan R35 si distingue per le sue prestazioni straordinarie, grazie al potente motore V6 biturbo da 3,8 litri, 
+        la trazione integrale precisa e un design accattivante. La sua capacità di combinare velocità, controllo e comfort 
+        la rende una delle supercar più desiderate.
     </p>
     <p>
-        Per la ricetta completa, visita il sito 
-        <a href="https://www.example.com/ricetta-originale" target="_blank" rel="noopener noreferrer">questa pagina</a>.
+        Scopri di più sul sito ufficiale del marchio: 
+        <a href="https://www.nissan.it/" target="_blank" rel="noopener noreferrer">Nissan Italia</a>.
     </p>
 
-    <div class="form-container">
-        <form action="submit_feedback.php" method="POST">
-            <label for="email">Indirizzo email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required />
-
-            <label for="consenso">
-                <input type="checkbox" id="consenso" name="consenso" required />
-                Acconsento al trattamento dei dati personali
+    <h2>Richiesta Informazioni</h2>
+    <form action="/submit" method="post">
+        <div>
+            <label for="dealer-name">Nome della concessionaria visitata:</label>
+            <input type="text" id="dealer-name" name="dealer-name" required>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="data-consent" required>
+                Acconsento al trattamento dei dati
             </label>
-
-            <label for="gradimento">Livello di gradimento:</label>
-            <select id="gradimento" name="gradimento" required>
-                <option value="" disabled selected>Seleziona un'opzione</option>
-                <option value="ottimo">Ottimo</option>
-                <option value="buono">Buono</option>
-                <option value="sufficiente">Sufficiente</option>
-                <option value="scarso">Scarso</option>
+        </div>
+        <div>
+            <label for="model-choice">Modello di interesse:</label>
+            <select id="model-choice" name="model-choice" required>
+                <option value="">-- Seleziona modello --</option>
+                <option value="base">Nissan R35 Base</option>
+                <option value="premium">Nissan R35 Premium</option>
+                <option value="nismo">Nissan R35 Nismo</option>
             </select>
-
-            <input type="submit" value="Invia" />
-        </form>
-    </div>
-
-</div>
-
+        </div>
+        <div>
+            <button type="submit">Invia</button>
+        </div>
+    </form>
 </body>
 </html>
