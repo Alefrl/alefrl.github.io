@@ -1,55 +1,105 @@
-<html><head>  <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg"></head>
-<table border="1" cellspacing="0" cellpadding="5" style="border-collapse: collapse; text-align: center;">
-  <tr>
-    <th colspan="6" style="background-color: #e0e0e0; font-size: 18px;">Voti classe 3CI</th>
-  </tr>
-  <tr>
-    <th>Nome e Cognome</th>
-    <th>Matematica</th>
-    <th>Italiano</th>
-    <th>Inglese</th>
-    <th>Scienze</th>
-    <th>Storia</th>
-  </tr>
-  <tr>
-    <td>Mario Rossi</td>
-    <td style="background-color: #ffcccc;">4</td>
-    <td>6</td>
-    <td style="background-color: #ffcccc;">5</td>
-    <td>7</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>Anna Bianchi</td>
-    <td>8</td>
-    <td>7</td>
-    <td>9</td>
-    <td>8</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>Giulia Verdi</td>
-    <td>7</td>
-    <td>6</td>
-    <td>8</td>
-    <td style="background-color: #ffcccc;">5</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>Luigi Neri</td>
-    <td style="background-color: #ffcccc;">5</td>
-    <td>7</td>
-    <td>6</td>
-    <td>8</td>
-    <td style="background-color: #ffcccc;">4</td>
-  </tr>
-  <tr>
-    <td>Sofia Marini</td>
-    <td>9</td>
-    <td>8</td>
-    <td>10</td>
-    <td>9</td>
-    <td>8</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voti classe 3CI</title>
+  <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 900px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th {
+      background-color: #4a90e2;
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px 10px;
+    }
+    th[colspan] {
+      background-color: #357ABD;
+      font-size: 1.5rem;
+      padding: 20px 10px;
+    }
+    td, th {
+      border: 1px solid #ddd;
+      padding: 12px 8px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f6fc;
+    }
+    td.low-grade {
+      background-color: #ffcccc;
+      font-weight: bold;
+      color: #a00;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th colspan="6">Voti classe 3CI</th>
+    </tr>
+    <tr>
+      <th>Nome e Cognome</th>
+      <th>Matematica</th>
+      <th>Italiano</th>
+      <th>Inglese</th>
+      <th>Scienze</th>
+      <th>Storia</th>
+    </tr>
+    <tr>
+      <td>Mario Rossi</td>
+      <td class="low-grade">4</td>
+      <td>6</td>
+      <td class="low-grade">5</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Anna Bianchi</td>
+      <td>8</td>
+      <td>7</td>
+      <td>9</td>
+      <td>8</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Giulia Verdi</td>
+      <td>7</td>
+      <td>6</td>
+      <td>8</td>
+      <td class="low-grade">5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Luigi Neri</td>
+      <td class="low-grade">5</td>
+      <td>7</td>
+      <td>6</td>
+      <td>8</td>
+      <td class="low-grade">4</td>
+    </tr>
+    <tr>
+      <td>Sofia Marini</td>
+      <td>9</td>
+      <td>8</td>
+      <td>10</td>
+      <td>9</td>
+      <td>8</td>
+    </tr>
+  </table>
+</body>
 </html>
