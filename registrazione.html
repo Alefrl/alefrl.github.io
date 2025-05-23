@@ -1,42 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg">
-    <title>Registrazione</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg" />
+  <title>Registrazione</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 350px;
+      box-sizing: border-box;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 8px 0 18px 0;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="date"]:focus,
+    select:focus,
+    textarea:focus,
+    input[type="file"]:focus {
+      border-color: #54aedb;
+      outline: none;
+      box-shadow: 0 0 8px rgba(84, 174, 219, 0.5);
+    }
+    label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #333;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .radio-group {
+      margin-bottom: 18px;
+    }
+    .radio-group input[type="radio"] {
+      margin-right: 8px;
+      transform: scale(1.1);
+      vertical-align: middle;
+    }
+    .radio-group label {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    input[type="submit"] {
+      background-color: #54aedb;
+      color: white;
+      border: none;
+      padding: 12px 0;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      width: 100%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+    }
+    input[type="submit"]:hover {
+      background-color: #3a8acb;
+    }
+    textarea {
+      resize: vertical;
+      font-family: inherit;
+    }
+  </style>
 </head>
 <body>
-        <input type="text" name="nome" placeholder="Nome" required><br><br>
-        <input type="text" name="cognome" placeholder="Cognome" required><br><br>
-        <input type="date" name="data-nascita" required><br><br>
-        <input type="email" name="email" placeholder="Email" required><br><br>
-        <input type="password" name="password" placeholder="Password" required><br><br>
-        <select name="regione" required>
-            <option value="">Regione...</option>
-            <option value="Lombardia">Lombardia</option>
-            <option value="Lazio">Lazio</option>
-            <option value="Piemonte">Piemonte</option>
-            <option value="Valle d'Aosta">Valle d'Aosta</option>
-            <option value="Trentino Alto Adige">Trentino Alto Adige</option>
-            <option value="Friulo-Venezia Giulia">Friuli-Venezia Giulia</option>
-            <option value="Veneto">Veneto</option>
-            <option value="Liguria">Liguria</option>
-            <option value="Toscana">Toscana</option>
-            <option value="Sicilia">Sicilia</option>
-            <option value="Emilia Romogna">Emilia Romagna</option>
-            <option value="Marche">Marche</option>
-            <option value="Abruzzo">Abruzzo</option>
-            <option value="Sardegna">Sardegna</option>
-            <option value="Molise">Molise</option>
-            <option value="Campania">Campania</option>
-            <option value="Puglia">Puglia</option>
-            <option value="Calabria">Calabria</option>
-            <option value="Basilicata">Basilicata</option>  
-        </select><br><br>
-        <input type="radio" name="testo" value="acconsento" required>acconsento
-        <input type="radio" name="testo" value="non acconsento">non acconsento<br></br>
-        <textarea name="note" placeholder="Note..." rows="4"></textarea><br><br>
-        <input type="file" name="foto" accept="image/*"><br><br>
-        <input type="submit" value="Invia">
+  <form>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Nome" required />
+    
+    <label for="cognome">Cognome</label>
+    <input type="text" id="cognome" name="cognome" placeholder="Cognome" required />
+    
+    <label for="data-nascita">Data di nascita</label>
+    <input type="date" id="data-nascita" name="data-nascita" required />
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required />
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Password" required />
+    
+    <label for="regione">Regione</label>
+    <select id="regione" name="regione" required>
+      <option value="">Seleziona regione...</option>
+      <option value="Lombardia">Lombardia</option>
+      <option value="Lazio">Lazio</option>
+      <option value="Piemonte">Piemonte</option>
+      <option value="Valle d'Aosta">Valle d'Aosta</option>
+      <option value="Trentino Alto Adige">Trentino Alto Adige</option>
+      <option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
+      <option value="Veneto">Veneto</option>
+      <option value="Liguria">Liguria</option>
+      <option value="Toscana">Toscana</option>
+      <option value="Sicilia">Sicilia</option>
+      <option value="Emilia Romagna">Emilia Romagna</option>
+      <option value="Marche">Marche</option>
+      <option value="Abruzzo">Abruzzo</option>
+      <option value="Sardegna">Sardegna</option>
+      <option value="Molise">Molise</option>
+      <option value="Campania">Campania</option>
+      <option value="Puglia">Puglia</option>
+      <option value="Calabria">Calabria</option>
+      <option value="Basilicata">Basilicata</option>
+    </select>
+    
+    <div class="radio-group">
+      <input type="radio" id="acconsento" name="testo" value="acconsento" required />
+      <label for="acconsento">Acconsento</label>
+      
+      <input type="radio" id="non-acconsento" name="testo" value="non acconsento" />
+      <label for="non-acconsento">Non acconsento</label>
+    </div>
+    
+    <label for="note">Note</label>
+    <textarea id="note" name="note" placeholder="Note..." rows="4"></textarea>
+    
+    <label for="foto">Carica foto</label>
+    <input type="file" id="foto" name="foto" accept="image/*" />
+    
+    <input type="submit" value="Invia" />
+  </form>
 </body>
 </html>
