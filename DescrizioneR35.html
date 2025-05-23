@@ -1,42 +1,164 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nissan R35</title>  <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nissan R35</title>
+    <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f9faff;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #054a91;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        thead {
+            background-color: #054a91;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f1f6fc;
+        }
+        ul {
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            padding-left: 20px;
+            color: #054a91;
+        }
+        ul li {
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 1.1rem;
+        }
+        a {
+            color: #054a91;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            background-color: #fff;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            font-size: 1rem;
+        }
+        form div {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #054a91;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1.8px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        select:focus {
+            border-color: #054a91;
+            outline: none;
+            box-shadow: 0 0 8px rgba(5, 74, 145, 0.4);
+        }
+        input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        button {
+            width: 100%;
+            background-color: #054a91;
+            color: white;
+            border: none;
+            padding: 12px 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #043b74;
+        }
+    </style>
 </head>
 <body>
     <h1>Nissan R35</h1>
     <img src="/Nissan_GT-R_01.JPG" alt="Nissan R35">
 
-   <h2>Prezzi e Tipologia di Alimentazione</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Modello</th>
-            <th>Prezzo (€)</th>
-            <th>Tipologia di Alimentazione</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Nissan R35 Base</td>
-            <td>100.000</td>
-            <td>Benzina</td>
-        </tr>
-        <tr>
-            <td>Nissan R35 Premium</td>
-            <td>120.000</td>
-            <td>Benzina</td>
-        </tr>
-        <tr>
-            <td>Nissan R35 Nismo</td>
-            <td>150.000</td>
-            <td>Benzina</td>
-        </tr>
-    </tbody>
-</table>
+    <h2>Prezzi e Tipologia di Alimentazione</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Modello</th>
+                <th>Prezzo (€)</th>
+                <th>Tipologia di Alimentazione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nissan R35 Base</td>
+                <td>100.000</td>
+                <td>Benzina</td>
+            </tr>
+            <tr>
+                <td>Nissan R35 Premium</td>
+                <td>120.000</td>
+                <td>Benzina</td>
+            </tr>
+            <tr>
+                <td>Nissan R35 Nismo</td>
+                <td>150.000</td>
+                <td>Benzina</td>
+            </tr>
+        </tbody>
+    </table>
 
     <h2>Optional</h2>
     <ul>
@@ -55,13 +177,13 @@
     </p>
     <p>
         Scopri di più sul sito ufficiale del marchio: 
-        <a href="https://www.nissan.it/" target="_blank">Nissan Italia</a>.
+        <a href="https://www.nissan.it/" target="_blank" rel="noopener noreferrer">Nissan Italia</a>.
     </p>
 
     <h2>Richiesta Informazioni</h2>
     <form action="/submit" method="post">
         <div>
-            <label for="dealer-name">Nome della concessionaria visitata:</label><br>
+            <label for="dealer-name">Nome della concessionaria visitata:</label>
             <input type="text" id="dealer-name" name="dealer-name" required>
         </div>
         <div>
@@ -71,8 +193,9 @@
             </label>
         </div>
         <div>
-            <label for="model-choice">Modello di interesse:</label><br>
+            <label for="model-choice">Modello di interesse:</label>
             <select id="model-choice" name="model-choice" required>
+                <option value="">-- Seleziona modello --</option>
                 <option value="base">Nissan R35 Base</option>
                 <option value="premium">Nissan R35 Premium</option>
                 <option value="nismo">Nissan R35 Nismo</option>
