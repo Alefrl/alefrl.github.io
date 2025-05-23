@@ -1,48 +1,83 @@
-html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina di Esempio</title>
-    <style>
-        body {
-            font-family: Verdana, sans-serif;
-            text-align: center;
-        }
-        .right-align {
-            text-align: right;
-            font-style: italic;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%; 
-            height: auto; 
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagina di Esempio</title>
+     <link rel="icon" type="image/svg+xml" href="availability-svgrepo-com.svg">
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+      filter: drop-shadow(0 0 1px rgba(0,0,0,0.05));
+    }
+    h1, h2 {
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+    .italic-text {
+      font-style: italic;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+    img:hover {
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+    hr {
+      margin: 40px 0;
+      border: none;
+      border-top: 2px solid #ccc;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    ul[type="circle"], ol[type="A"] {
+      max-width: 400px;
+      margin: 0 auto 40px auto;
+      padding-left: 20px;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      background-color: #fff;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>pagina di compito</h1>
-    
+  <h1>Pagina di compito</h1>
   
-<img src="/Nissan_GT-R_01.JPG" alt="Nissan GT-R R35>
+  <img src="/Nissan_GT-R_01.JPG" alt="Nissan GT-R R35" />
 
-   <hr>
-<p class="italic-text">Questo è un paragrafo in corsivo.</p>
-<p>Testo con <sup>apice</sup> e <sub>pedice</sub></p>
-    <h2>Lista non ordinata</h2>
-    <ul type="circle">
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
+  <hr />
 
-    <h2>Lista ordinata</h2>
-    <ol type="A" start="4">
-        <li>Quarto elemento</li>
-        <li>Quinto elemento</li>
-        <li>Sesto elemento</li>
-    </ol>
+  <p class="italic-text">Questo è un paragrafo in corsivo.</p>
+  <p>Testo con <sup>apice</sup> e <sub>pedice</sub></p>
 
+  <h2>Lista non ordinata</h2>
+  <ul type="circle">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+
+  <h2>Lista ordinata</h2>
+  <ol type="A" start="4">
+    <li>Quarto elemento</li>
+    <li>Quinto elemento</li>
+    <li>Sesto elemento</li>
+  </ol>
+
+</body>
+</html>
