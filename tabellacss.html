@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tabella Alternata</title>
-    <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg" />
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabella Interattiva con Focus</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
 
-        th, td {
-            border: 1px solid #555;
-            padding: 10px;
-            text-align: center;
-        }
+    th, td {
+      border: 1px solid #555;
+      padding: 10px;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.2s;
+    }
 
-        th {
-            background-color: #444;
-            color: white;
-        }
+    th {
+      background-color: #444;
+      color: white;
+    }
 
-        tbody tr:nth-child(odd) {
-            background-color: #f9f9f9;
-        }
+    tbody tr:nth-child(odd) td {
+      background-color: #f9f9f9;
+    }
 
-        tbody tr:nth-child(even) {
-            background-color: #e0e0e0;
-        }
+    tbody tr:nth-child(even) td {
+      background-color: #e0e0e0;
+    }
 
-        tbody tr:hover {
-            background-color: #c2d6f0;
-        }
-    </style>
+    td {
+      cursor: pointer;
+      outline: none; 
+    }
+
+    td:hover {
+      background-color: #b0d4ff;
+      transform: scale(1.05);
+    }
+
+    td:focus {
+      background-color: #78c2ad;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">Colonna 1</th>
-                <th scope="col">Colonna 2</th>
-                <th scope="col">Colonna 3</th>
-                <th scope="col">Colonna 4</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>R1C1</td><td>R1C2</td><td>R1C3</td><td>R1C4</td></tr>
-            <tr><td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td></tr>
-            <tr><td>R3C1</td><td>R3C2</td><td>R3C3</td><td>R3C4</td></tr>
-            <tr><td>R4C1</td><td>R4C2</td><td>R4C3</td><td>R4C4</td></tr>
-            <tr><td>R5C1</td><td>R5C2</td><td>R5C3</td><td>R5C4</td></tr>
-            <tr><td>R6C1</td><td>R6C2</td><td>R6C3</td><td>R6C4</td></tr>
-            <tr><td>R7C1</td><td>R7C2</td><td>R7C3</td><td>R7C4</td></tr>
-            <tr><td>R8C1</td><td>R8C2</td><td>R8C3</td><td>R8C4</td></tr>
-            <tr><td>R9C1</td><td>R9C2</td><td>R9C3</td><td>R9C4</td></tr>
-            <tr><td>R10C1</td><td>R10C2</td><td>R10C3</td><td>R10C4</td></tr>
-        </tbody>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Colonna 1</th>
+        <th>Colonna 2</th>
+        <th>Colonna 3</th>
+        <th>Colonna 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td tabindex="0">R1C1</td><td tabindex="0">R1C2</td><td tabindex="0">R1C3</td><td tabindex="0">R1C4</td></tr>
+      <tr><td tabindex="0">R2C1</td><td tabindex="0">R2C2</td><td tabindex="0">R2C3</td><td tabindex="0">R2C4</td></tr>
+      <tr><td tabindex="0">R3C1</td><td tabindex="0">R3C2</td><td tabindex="0">R3C3</td><td tabindex="0">R3C4</td></tr>
+      <tr><td tabindex="0">R4C1</td><td tabindex="0">R4C2</td><td tabindex="0">R4C3</td><td tabindex="0">R4C4</td></tr>
+      <tr><td tabindex="0">R5C1</td><td tabindex="0">R5C2</td><td tabindex="0">R5C3</td><td tabindex="0">R5C4</td></tr>
+    </tbody>
+  </table>
 
 </body>
 </html>
