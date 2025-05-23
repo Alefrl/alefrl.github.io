@@ -1,24 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg">
-    <title>prova</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alti Tag</title>
+     <link rel="icon" type="image/svg+xml" href="availability-svgrepo-com.svg">
+  <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      background: #f0f4f8;
+      padding: 20px 30px;
+      color: #34495e;
+    }
+    ul[type="circle"] {
+      list-style-type: circle;
+      padding-left: 30px;
+      margin-bottom: 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    ol[type="I"] {
+      list-style-type: upper-roman;
+      padding-left: 40px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    ul[type="circle"] ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
 <body>
-    <ul type="circle">
-    <li>viva  1</li>
-    <li>viva  2</li>
-    <li>viva  3</li>
-</ul>
-<ol type="I">
-    <li>viva valentina</li>
-    <ul type="circle">
-        <li>viva </li>
-        <li>viva </li>
-    </ul>
+  <ul type="circle">
+    <li>viva 1</li>
+    <li>viva 2</li>
+    <li>viva 3</li>
+  </ul>
+
+  <ol type="I">
+    <li>viva valentina
+      <ul type="circle">
+        <li>viva</li>
+        <li>viva</li>
+      </ul>
+    </li>
     <li>evviva</li>
     <li>evviva</li>
-</ol>
+  </ol>
 </body>
 </html>
