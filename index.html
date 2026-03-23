@@ -2,44 +2,57 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Portale Esercizi - Alessio Capuni</title>
+    <title>Dashboard Esercizi - Alessio Capuni</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
         }
 
         header {
-            background: #0055aa;
+            background: #1a73e8;
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
         }
 
+        #counter {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
         .container {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
             padding: 40px;
-            flex-wrap: wrap;
         }
 
         .card {
             background: white;
-            width: 250px;
-            padding: 20px;
+            padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             cursor: pointer;
             transition: 0.3s;
         }
 
         .card:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px);
             background: #e8f0ff;
+        }
+
+        .card h2 {
+            margin: 0;
+            color: #1a73e8;
+        }
+
+        .card p {
+            margin-top: 10px;
+            color: #444;
         }
 
         /* POPUP */
@@ -55,8 +68,8 @@
 
         .popup {
             background: white;
+            width: 500px;
             padding: 25px;
-            width: 400px;
             border-radius: 12px;
             animation: fadeIn 0.3s;
         }
@@ -66,11 +79,22 @@
             to {opacity: 1; transform: scale(1);}
         }
 
+        .close-btn {
+            float: right;
+            background: red;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
         .sub-card {
-            background: #f7f7f7;
-            padding: 12px;
-            margin: 10px 0;
+            background: #f7f9fc;
+            padding: 15px;
+            margin: 12px 0;
             border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             transition: 0.2s;
         }
 
@@ -78,37 +102,38 @@
             background: #dfe9ff;
         }
 
-        .close-btn {
-            background: red;
-            color: white;
-            padding: 8px 12px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            float: right;
-        }
-
-        #counter {
-            text-align: center;
-            font-size: 18px;
-            margin-top: 10px;
-            color: #333;
+        .sub-card a {
+            display: inline-block;
+            margin-top: 8px;
+            color: #1a73e8;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Portale Esercizi TPS</h1>
+    <h1>Dashboard Esercizi TPS</h1>
     <h3>Studente: Alessio Capuni</h3>
 </header>
 
 <div id="counter">Totale esercizi: <b>9</b></div>
 
 <div class="container">
-    <div class="card" onclick="openPopup('es03')">ES03</div>
-    <div class="card" onclick="openPopup('es04')">ES04</div>
-    <div class="card" onclick="openPopup('es05')">ES05</div>
+    <div class="card" onclick="openPopup('es03')">
+        <h2>ES03</h2>
+        <p>Reti e TCP/IP</p>
+    </div>
+
+    <div class="card" onclick="openPopup('es04')">
+        <h2>ES04</h2>
+        <p>Programmazione C</p>
+    </div>
+
+    <div class="card" onclick="openPopup('es05')">
+        <h2>ES05</h2>
+        <p>Esercizi vari</p>
+    </div>
 </div>
 
 <!-- POPUP -->
@@ -123,19 +148,19 @@
 <script>
     const esercizi = {
         es03: [
-            { id: "es03a", desc: "Descrizione esercizio 03A", link: "#" },
-            { id: "es03b", desc: "Descrizione esercizio 03B", link: "#" },
-            { id: "es03c", desc: "Descrizione esercizio 03C", link: "#" },
-            { id: "es03d", desc: "Descrizione esercizio 03D", link: "#" }
+            { id: "ES03A", desc: "Introduzione alle reti", link: "#" },
+            { id: "ES03B", desc: "Subnetting IPv4", link: "#" },
+            { id: "ES03C", desc: "Modello OSI", link: "#" },
+            { id: "ES03D", desc: "Socket TCP in C", link: "#" }
         ],
         es04: [
-            { id: "es04a", desc: "Descrizione esercizio 04A", link: "#" },
-            { id: "es04b", desc: "Descrizione esercizio 04B", link: "#" },
-            { id: "es04c", desc: "Descrizione esercizio 04C", link: "#" }
+            { id: "ES04A", desc: "Input/Output in C", link: "#" },
+            { id: "ES04B", desc: "Array e puntatori", link: "#" },
+            { id: "ES04C", desc: "Struct e file", link: "#" }
         ],
         es05: [
-            { id: "es05a", desc: "Descrizione esercizio 05A", link: "#" },
-            { id: "es05b", desc: "Descrizione esercizio 05B", link: "#" }
+            { id: "ES05A", desc: "Esercizio personalizzato A", link: "#" },
+            { id: "ES05B", desc: "Esercizio personalizzato B", link: "#" }
         ]
     };
 
@@ -148,9 +173,9 @@
 
         content.innerHTML = esercizi[key].map(ex => `
             <div class="sub-card">
-                <h3>${ex.id.toUpperCase()}</h3>
+                <h3>${ex.id}</h3>
                 <p>${ex.desc}</p>
-                <a href="${ex.link}" target="_blank">Vai all'esercizio</a>
+                <a href="${ex.link}" target="_blank">Apri esercizio</a>
             </div>
         `).join("");
 
@@ -163,3 +188,4 @@
 </script>
 
 </body>
+</html>
